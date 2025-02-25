@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply antialiased text-gray-800;
+  }
+  h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+  h2 {
+    @apply text-3xl font-semibold mb-4;
+  }
+  h3 {
+    @apply text-2xl font-semibold mb-3;
+  }
+  h4 {
+    @apply text-xl font-semibold mb-2;
+  }
+  p {
+    @apply mb-4;
+  }
+  a {
+    @apply text-primary-600 hover:text-primary-700;
+  }
+  code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+  }
+  pre {
+    @apply bg-gray-100 p-4 rounded-lg mb-4 overflow-x-auto;
+  }
+}

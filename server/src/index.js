@@ -58,6 +58,20 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+
+const startServer = (port) => {
+    try {
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    } catch (error) {
+        if (error.code === 'EADDRINUSE') {
+            console.log(`Port ${port} is busy, trying ${port + 1}`);
+            startServer(port + 1);
+        } else {
+            console.error('Server error:', error);
+        }
+    }
+};
+
+startServer(PORT);

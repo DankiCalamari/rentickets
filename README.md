@@ -25,26 +25,7 @@ A full-stack ticketing system built with React.js, Node.js, and PostgreSQL, feat
 
 ## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd ticket2
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm run install:all
-   ```
-
-3. Configure environment variables:
-   - Create `.env` file in the server directory
-   - Create `.env` file in the client directory
-   (See documentation for required variables)
-
-4. Start development servers:
-   ```bash
-   npm run dev
-   ```
+https://graceful-treacle-61cdd5.netlify.app/
 
 ## Documentation
 
